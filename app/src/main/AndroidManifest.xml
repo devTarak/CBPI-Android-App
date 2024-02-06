@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CBPI"
+        tools:targetApi="31">
+        <activity
+            android:name=".NontechDepartment"
+            android:exported="false"
+            android:parentActivityName=".Teachers"/>
+        <activity
+            android:name=".ElectricalDepartment"
+            android:exported="false"
+            android:parentActivityName=".Teachers" />
+        <activity
+            android:name=".FoodDepartment"
+            android:exported="false"
+            android:parentActivityName=".Teachers" />
+        <activity
+            android:name=".RacDepartment"
+            android:exported="false"
+            android:parentActivityName=".Teachers" />
+        <activity
+            android:name=".CivilDepartment"
+            android:exported="false"
+            android:parentActivityName=".Teachers" />
+        <activity
+            android:name=".ComputerDepartment"
+            android:exported="false"
+            android:parentActivityName=".Teachers" />
+        <activity
+            android:name=".Principal"
+            android:exported="false"
+            android:parentActivityName=".Teachers" />
+        <activity
+            android:name=".Location"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ImagePreviewActivity"
+            android:exported="false"
+            android:parentActivityName=".Gallery" />
+        <activity
+            android:name=".HelpLine"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CollegeNotice"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Staffs"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Gallery"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Teachers"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".version"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Team"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDG738x4oyk9T_RxMqlt1KYgTHDq5ired0" />
+    </application>
+
+</manifest>

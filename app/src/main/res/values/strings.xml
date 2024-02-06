@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CBPI</string>
+    <string name="app_share">https://devtarak.github.io/</string>
+    <string name="Job_Tab">https://jobs.bdjobs.com/jobsearch.asp?fcatId=8</string>
+    <string name="Bteb_notice">https://bteb.gov.bd/site/view/notices</string>
+    <string name="College_Notice">https://coxsbazar.polytech.gov.bd/site/view/notices</string>
+</resources>

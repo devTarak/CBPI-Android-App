@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:orientation="vertical"
+    android:paddingTop="10sp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brief Introduction of the Institute"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:paddingBottom="10sp"
+                android:paddingRight="10sp"
+                android:paddingLeft="10sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+                android:src="@drawable/img1"
+                android:paddingBottom="10sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cox's Bazar Polytechnic Institute is the largest institute of technical education in southern part of Bangladesh. Cox's Bazar Polytechnic Institute started its journey with computer technology in 2004. Later, RAC Technology was introduced in 2005, Civil and Food Technology in 2006. Tourism and Hospitality Management in 2016 and Electrical Technology in 2021. Currently, a total of 600 students are admitted in 05 technologies every year.
+
+The large infrastructural institution spread over 2 acres of land has administrative building-1, academic building-2, workshop-building-2 and provides quality technical and vocational education and training through proper use of modern machines and equipment. The campus has accommodation for employees. There is a well-stocked library with various books including textbooks for enlightenment, a mosque, flower gardens, which are contributing to the creation of intellectual and thoughtful human resources, enhancing the beauty and value of the institute.
+
+The present government of Bangladesh has given special importance to polytechnic education in terms of producing skilled human resources through technical and vocational education and training along with science and technology education, Cox's Bazar Polytechnic Institute nurtures the importance of technical education and produces skilled human resources through Diploma Engineering Graduate and short term trade courses. It continues to play a leading role in the socio-economic development of the country."
+                android:textSize="25sp"
+                android:paddingRight="5sp"
+                android:paddingLeft="5sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infrastructure information"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:padding="10sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Academic Building: 01 (5 floors)\nWorkshop Building: 02 (2 floors)\nAdministrative Building: 01 (5 floors)\nStaff Quarters: 01 (4 Floors)\nPrincipal's Residence: 01 (1st floor)"
+                android:textSize="20sp"
+                android:paddingRight="5sp"
+                android:paddingLeft="5sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Success and achievement"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="monospace"
+                android:padding="10sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:padding="5sp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100sp"
+                        android:src="@drawable/achivement1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="৪৪-তম জাতীয় বিজ্ঞান ও প্রযুক্তি সপ্তাহ- ২০২৩- এ প্রকল্প উপস্থাপনা (সিনিয়র গ্রুপ) - এ ২য় স্থান"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100sp"
+                        android:src="@drawable/achivement2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="ডিজিটাল উদ্ভাবনী মেলা- ২০২২- এ ১ম স্থান"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:padding="5sp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100sp"
+                        android:src="@drawable/achivement3"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="৪৩-তম জাতীয় বিজ্ঞান ও প্রযুক্তি সপ্তাহ- ২০২১- এ ১ম স্থান"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:padding="10sp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100sp"
+                        android:src="@drawable/achivement"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Next Achivements"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
