@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout herobteb;
     LinearLayout heroTeam;
     LinearLayout heroMap;
+    LinearLayout heroclassSh;
+    LinearLayout herocstcar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,22 @@ public class MainActivity extends AppCompatActivity {
         herobteb = findViewById(R.id.herobteb);
         heroTeam = findViewById(R.id.heroTeam);
         heroMap = findViewById(R.id.heroMap);
+        heroclassSh = findViewById(R.id.heroclassSh);
+        herocstcar = findViewById(R.id.herocstcar);
+        herocstcar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntentcare = new Intent(MainActivity.this, CstCareer.class);
+                startActivity(myIntentcare);
+            }
+        });
+        heroclassSh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntentClass = new Intent(MainActivity.this,TeacherClassFinder.class);
+                startActivity(myIntentClass);
+            }
+        });
         heroMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

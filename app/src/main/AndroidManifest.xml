@@ -16,9 +16,17 @@
         android:theme="@style/Theme.CBPI"
         tools:targetApi="31">
         <activity
+            android:name=".CstCareer"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".TeacherClassFinder"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".NontechDepartment"
             android:exported="false"
-            android:parentActivityName=".Teachers"/>
+            android:parentActivityName=".Teachers" />
         <activity
             android:name=".ElectricalDepartment"
             android:exported="false"

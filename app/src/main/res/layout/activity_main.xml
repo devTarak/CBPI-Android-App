@@ -187,6 +187,59 @@
                 android:paddingRight="20sp"
                 android:paddingTop="20sp">
                 <LinearLayout
+                    android:id="@+id/heroclassSh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="50"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="20sp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100sp"
+                        android:src="@drawable/classtime"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Today Class Schedule"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/herocstcar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="50"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp"
+                    android:paddingTop="20sp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="100sp"
+                        android:src="@drawable/cstcarrer"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CST Career Details"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp"
+                android:paddingTop="20sp">
+                <LinearLayout
                     android:id="@+id/herojob"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -202,7 +255,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Job"
+                        android:text="Engineering job"
                         android:textSize="20sp"
                         android:layout_gravity="center"/>
                 </LinearLayout>
