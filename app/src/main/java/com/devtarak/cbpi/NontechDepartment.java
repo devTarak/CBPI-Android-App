@@ -24,7 +24,7 @@ public class NontechDepartment extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
-        getSupportActionBar().setTitle("Computer Department");
+        getSupportActionBar().setTitle("Non-Tech Department");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
     }
     @Override
