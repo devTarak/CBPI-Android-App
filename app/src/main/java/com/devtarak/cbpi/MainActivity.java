@@ -22,6 +22,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     LinearLayout heroabout;
@@ -53,90 +54,50 @@ public class MainActivity extends AppCompatActivity {
         heroMap = findViewById(R.id.heroMap);
         heroclassSh = findViewById(R.id.heroclassSh);
         herocstcar = findViewById(R.id.herocstcar);
-        herocstcar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntentcare = new Intent(MainActivity.this, CstCareer.class);
-                startActivity(myIntentcare);
-            }
+        herocstcar.setOnClickListener(v -> {
+            Intent myIntentcare = new Intent(MainActivity.this, CstCareer.class);
+            startActivity(myIntentcare);
         });
-        heroclassSh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntentClass = new Intent(MainActivity.this,TeacherClassFinder.class);
-                startActivity(myIntentClass);
-            }
+        heroclassSh.setOnClickListener(v -> {
+            Intent myIntentClass = new Intent(MainActivity.this,TeacherClassFinder.class);
+            startActivity(myIntentClass);
         });
-        heroMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthel = new Intent(MainActivity.this,Location.class);
-                startActivity(myIntenthel);
-            }
+        heroMap.setOnClickListener(v -> {
+            Intent myIntenthel = new Intent(MainActivity.this,Location.class);
+            startActivity(myIntenthel);
         });
-        heroTeam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthel = new Intent(MainActivity.this,Team.class);
-                startActivity(myIntenthel);
-            }
+        heroTeam.setOnClickListener(v -> {
+            Intent myIntenthel = new Intent(MainActivity.this,Team.class);
+            startActivity(myIntenthel);
         });
-        herobteb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirect(getString(R.string.Bteb_notice));
-            }
+        herobteb.setOnClickListener(v -> ClickRedirect(getString(R.string.Bteb_notice)));
+        herojob.setOnClickListener(v -> ClickRedirect(getString(R.string.Job_Tab)));
+        herosupport.setOnClickListener(v -> {
+            Intent myIntenthel = new Intent(MainActivity.this,HelpLine.class);
+            startActivity(myIntenthel);
         });
-        herojob.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirect(getString(R.string.Job_Tab));
-            }
+        heronotice.setOnClickListener(v -> {
+            Intent myIntentNot = new Intent(MainActivity.this,CollegeNotice.class);
+            startActivity(myIntentNot);
         });
-        herosupport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthel = new Intent(MainActivity.this,HelpLine.class);
-                startActivity(myIntenthel);
-            }
+        herostaffs.setOnClickListener(v -> {
+            Intent myIntentSta = new Intent(MainActivity.this,Staffs.class);
+            startActivity(myIntentSta);
         });
-        heronotice.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntentNot = new Intent(MainActivity.this,CollegeNotice.class);
-                startActivity(myIntentNot);
-            }
+        herogallary.setOnClickListener(v -> {
+            Intent myIntentGal = new Intent(MainActivity.this,Gallery.class);
+            startActivity(myIntentGal);
         });
-        herostaffs.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntentSta = new Intent(MainActivity.this,Staffs.class);
-                startActivity(myIntentSta);
-            }
+        heroteacher.setOnClickListener(v -> {
+            Intent myIntenttea = new Intent(MainActivity.this,Teachers.class);
+            startActivity(myIntenttea);
         });
-        herogallary.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntentGal = new Intent(MainActivity.this,Gallery.class);
-                startActivity(myIntentGal);
-            }
-        });
-        heroteacher.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenttea = new Intent(MainActivity.this,Teachers.class);
-                startActivity(myIntenttea);
-            }
-        });
-        heroabout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this,About.class);
-                startActivity(myIntent);
-            }
+        heroabout.setOnClickListener(v -> {
+            Intent myIntent = new Intent(MainActivity.this,About.class);
+            startActivity(myIntent);
         });
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
-        getSupportActionBar().setTitle("Home");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("Home");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
 
         ImageSlider imageSlider;
@@ -165,16 +126,8 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Are you sure you want to exit?")
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        MainActivity.this.finish();
-                    }
-                })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                });
+                .setPositiveButton("Yes", (dialog, id) -> MainActivity.this.finish())
+                .setNegativeButton("No", (dialog, id) -> dialog.cancel());
         AlertDialog alert = builder.create();
         alert.show();
 
