@@ -1,9 +1,19 @@
 package com.devtarak.cbpi;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.GridView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -35,6 +45,15 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         List<String> schedule = getTeacherSchedule(teacherName);
         ScheduleAdapter adapter = new ScheduleAdapter(this, schedule);
         scheduleGridView.setAdapter(adapter);
+
+
+
+        //mendotory for every page
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
+        getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
+        getSupportActionBar().setTitle("Your Schedule");
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
     }
 
     // Method to retrieve the schedule for the teacher
@@ -51,6 +70,7 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         tarakSchedule.add(Map.of("wednesday", new String[]{"Math-2nd-1st-12:45pm to 1:30pm-302", "Fun-2nd-1st-12:45pm to 1:30pm-302", "Lab Class-2nd-1st-12:45pm to 1:30pm-302", "BSK-2nd-1st-12:45pm to 1:30pm-302"}));
         tarakSchedule.add(Map.of("thursday", new String[]{"Python-2nd-1st-12:45pm to 1:30pm-302", "OS-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "DSH-2nd-1st-12:45pm to 1:30pm-302"}));
         tarak.put("schedule", tarakSchedule);
+        teacherList.add(tarak);
 
         // Create Rahim's schedule
         Map<String, Object> rahim = new HashMap<>();
@@ -62,9 +82,6 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         rahimSchedule.add(Map.of("wednesday", new String[]{"Math-2nd-1st-12:45pm to 1:30pm-302", "Fun-2nd-1st-12:45pm to 1:30pm-302", "Lab Class-2nd-1st-12:45pm to 1:30pm-302", "BSK-2nd-1st-12:45pm to 1:30pm-302"}));
         rahimSchedule.add(Map.of("thursday", new String[]{"Python-2nd-1st-12:45pm to 1:30pm-302", "OS-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "DSH-2nd-1st-12:45pm to 1:30pm-302"}));
         rahim.put("schedule", rahimSchedule);
-
-        // Add both teachers' schedules to the list
-        teacherList.add(tarak);
         teacherList.add(rahim);
 
         List<String> scheduleList = new ArrayList<>();
@@ -133,6 +150,44 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
                 return "saturday";
             default:
                 return "";
+        }
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.new_menu,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+
+        if (itemId == R.id.menItem1) {
+            // Share option
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Get CBPI Official Application");
+            shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.app_share));
+            startActivity(Intent.createChooser(shareIntent, "Share via"));
+            return true;
+
+        } else if (itemId == R.id.menItem2) {
+            // Team option
+            Intent teamIntent = new Intent(this, Team.class);
+            startActivity(teamIntent);
+            return true;
+
+        }else if (itemId == R.id.menuItem3) {
+            // Team option
+            Intent versionIntent = new Intent(this, version.class);
+            startActivity(versionIntent);
+            return true;
+
+        } else {
+            // Handle other menu items if needed
+            return super.onOptionsItemSelected(item);
         }
     }
 }
