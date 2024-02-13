@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(myIntentcare);
         });
         heroclassSh.setOnClickListener(v -> {
-            Intent myIntentClass = new Intent(MainActivity.this,TeacherClassFinder.class);
+            Intent myIntentClass = new Intent(MainActivity.this,TeacherScheduleMain.class);
             startActivity(myIntentClass);
         });
         heroMap.setOnClickListener(v -> {

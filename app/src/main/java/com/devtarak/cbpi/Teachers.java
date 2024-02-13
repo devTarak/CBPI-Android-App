@@ -15,13 +15,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class Teachers extends AppCompatActivity {
-    LinearLayout nontech;
-    LinearLayout electrical;
-    LinearLayout food;
-    LinearLayout rac;
-    LinearLayout civil;
-    LinearLayout computer;
-    LinearLayout principle;
+    LinearLayout nontech, electrical, food,  rac, civil, computer, principle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

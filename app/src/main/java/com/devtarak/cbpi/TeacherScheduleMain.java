@@ -1,9 +1,5 @@
 package com.devtarak.cbpi;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -11,13 +7,22 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
-public class TeacherClassFinder extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+public class TeacherScheduleMain extends AppCompatActivity {
+    private EditText teacherNameInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher_class_finder);
+        setContentView(R.layout.activity_teacher_schedule_main);
+
+        teacherNameInput = findViewById(R.id.teacherNameInput);
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -25,6 +30,13 @@ public class TeacherClassFinder extends AppCompatActivity {
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("Class Finder");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
+    }
+
+    public void showSchedule(View view) {
+        String teacherName = teacherNameInput.getText().toString().trim();
+        Intent intent = new Intent(this, ScheduleDisplayActivity.class);
+        intent.putExtra("teacherName", teacherName);
+        startActivity(intent);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
