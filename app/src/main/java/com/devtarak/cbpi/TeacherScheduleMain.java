@@ -8,21 +8,61 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class TeacherScheduleMain extends AppCompatActivity {
-    private EditText teacherNameInput;
+    private SearchView searchView;
+    private ListView teacherListView;
+
+    private List<String> allTeachers;
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_schedule_main);
 
-        teacherNameInput = findViewById(R.id.teacherNameInput);
+        searchView = findViewById(R.id.searchView);
+        teacherListView = findViewById(R.id.teacherListView);
+
+        // Set up list of teachers
+        allTeachers = Arrays.asList("Tarak", "Rahim");
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, allTeachers);
+        teacherListView.setAdapter(adapter);
+
+        // Search functionality
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
+
+        // List item click listener
+        teacherListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String teacherName = (String) parent.getItemAtPosition(position);
+                showSchedule(teacherName);
+            }
+        });
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -32,8 +72,7 @@ public class TeacherScheduleMain extends AppCompatActivity {
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
     }
 
-    public void showSchedule(View view) {
-        String teacherName = teacherNameInput.getText().toString().trim();
+    private void showSchedule(String teacherName) {
         Intent intent = new Intent(this, ScheduleDisplayActivity.class);
         intent.putExtra("teacherName", teacherName);
         startActivity(intent);

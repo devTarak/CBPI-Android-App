@@ -7,18 +7,17 @@
     android:padding="16dp"
     tools:context=".TeacherScheduleMain">
 
-    <EditText
-        android:id="@+id/teacherNameInput"
+    <SearchView
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter teacher's name"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for a teacher"
         android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/showScheduleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="showSchedule"
-        android:text="Show Schedule" />
+    <ListView
+        android:id="@+id/teacherListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
