@@ -1,6 +1,7 @@
 package com.devtarak.cbpi;
 
 import android.os.Bundle;
+import android.widget.GridView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ScheduleDisplayActivity extends AppCompatActivity {
-    private TextView scheduleTextView;
+    private GridView scheduleGridView;
     private TextView headingTextView;
 
     @Override
@@ -19,7 +20,7 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_schedule_display);
 
         headingTextView = findViewById(R.id.headingTextView);
-        scheduleTextView = findViewById(R.id.scheduleTextView);
+        scheduleGridView = findViewById(R.id.scheduleGridView);
 
         // Retrieve the teacher's name from the intent
         String teacherName = getIntent().getStringExtra("teacherName");
@@ -31,12 +32,13 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         headingTextView.setText("Schedule for " + teacherName + " today (" + today + "):");
 
         // Get the schedule for the teacher and display it
-        String schedule = getTeacherSchedule(teacherName);
-        scheduleTextView.setText(schedule);
+        List<String> schedule = getTeacherSchedule(teacherName);
+        ScheduleAdapter adapter = new ScheduleAdapter(this, schedule);
+        scheduleGridView.setAdapter(adapter);
     }
 
     // Method to retrieve the schedule for the teacher
-    private String getTeacherSchedule(String teacherName) {
+    private List<String> getTeacherSchedule(String teacherName) {
         List<Map<String, Object>> teacherList = new ArrayList<>();
 
         // Create Tarak's schedule
@@ -49,6 +51,7 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         tarakSchedule.add(Map.of("wednesday", new String[]{"Math-2nd-1st-12:45pm to 1:30pm-302", "Fun-2nd-1st-12:45pm to 1:30pm-302", "Lab Class-2nd-1st-12:45pm to 1:30pm-302", "BSK-2nd-1st-12:45pm to 1:30pm-302"}));
         tarakSchedule.add(Map.of("thursday", new String[]{"Python-2nd-1st-12:45pm to 1:30pm-302", "OS-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "DSH-2nd-1st-12:45pm to 1:30pm-302"}));
         tarak.put("schedule", tarakSchedule);
+
         // Create Rahim's schedule
         Map<String, Object> rahim = new HashMap<>();
         rahim.put("name", "Rahim");
@@ -59,11 +62,12 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         rahimSchedule.add(Map.of("wednesday", new String[]{"Math-2nd-1st-12:45pm to 1:30pm-302", "Fun-2nd-1st-12:45pm to 1:30pm-302", "Lab Class-2nd-1st-12:45pm to 1:30pm-302", "BSK-2nd-1st-12:45pm to 1:30pm-302"}));
         rahimSchedule.add(Map.of("thursday", new String[]{"Python-2nd-1st-12:45pm to 1:30pm-302", "OS-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "DSH-2nd-1st-12:45pm to 1:30pm-302"}));
         rahim.put("schedule", rahimSchedule);
+
         // Add both teachers' schedules to the list
         teacherList.add(tarak);
         teacherList.add(rahim);
 
-        StringBuilder scheduleBuilder = new StringBuilder();
+        List<String> scheduleList = new ArrayList<>();
 
         boolean teacherFound = false;
         for (Map<String, Object> teacher : teacherList) {
@@ -80,11 +84,13 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
                             for (String subject : subjects) {
                                 String[] parts = subject.split("-");
                                 if (parts.length >= 5) {
-                                    scheduleBuilder.append("Subject: ").append(parts[0]).append("\n");
-                                    scheduleBuilder.append("Shift: ").append(parts[1]).append("\n");
-                                    scheduleBuilder.append("Semester: ").append(parts[2]).append("\n");
-                                    scheduleBuilder.append("Time Schedule: ").append(parts[3]).append("\n");
-                                    scheduleBuilder.append("Classroom Number: ").append(parts[4]).append("\n\n");
+                                    StringBuilder scheduleBuilder = new StringBuilder();
+                                    scheduleBuilder.append(parts[0]).append("\n");
+                                    scheduleBuilder.append(parts[1]).append("\n");
+                                    scheduleBuilder.append(parts[2]).append("\n");
+                                    scheduleBuilder.append(parts[3]).append("\n");
+                                    scheduleBuilder.append(parts[4]).append("\n\n");
+                                    scheduleList.add(scheduleBuilder.toString());
                                 }
                             }
                             classFound = true;
@@ -92,19 +98,19 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
                         }
                     }
                     if (!classFound) {
-                        scheduleBuilder.append("No class today for ").append(name).append("\n");
+                        scheduleList.add("No class today for " + name + "\n");
                     }
                 } else {
-                    scheduleBuilder.append("No class today for ").append(name).append("\n");
+                    scheduleList.add("No class today for " + name + "\n");
                 }
                 break;
             }
         }
         if (!teacherFound) {
-            scheduleBuilder.append("No teacher found with name ").append(teacherName).append("\n");
+            scheduleList.add("No teacher found with name " + teacherName + "\n");
         }
 
-        return scheduleBuilder.toString();
+        return scheduleList;
     }
 
     private String getToday() {

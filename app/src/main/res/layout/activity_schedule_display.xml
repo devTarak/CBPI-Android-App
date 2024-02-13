@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ScheduleDisplayActivity">
+
     <TextView
         android:id="@+id/headingTextView"
         android:layout_width="match_parent"
@@ -13,11 +14,15 @@
         android:textStyle="bold"
         android:padding="16dp"
         android:layout_marginTop="16dp"/>
-    <TextView
-        android:id="@+id/scheduleTextView"
+
+    <GridView
+        android:id="@+id/scheduleGridView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/headingTextView"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
         android:padding="16dp" />
 
 </RelativeLayout>
