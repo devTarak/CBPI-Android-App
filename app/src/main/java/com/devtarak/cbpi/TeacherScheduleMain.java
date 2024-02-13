@@ -68,7 +68,7 @@ public class TeacherScheduleMain extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
-        getSupportActionBar().setTitle("Class Finder");
+        getSupportActionBar().setTitle("Teacher's Class Finder");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
     }
 
