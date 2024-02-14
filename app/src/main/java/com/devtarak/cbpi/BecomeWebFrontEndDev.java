@@ -11,39 +11,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
-public class CstCareer extends AppCompatActivity {
-    TextView CarSoftwareEngginer, CarSoftwareDeveloper,CarwebDesigner, CarFrontendDeveloper, CarBackendDeveloper, CarFullStackDeveloper,CarGameDeveloper, CarDataAnalyst, CarDataScientist,CarDatabaseAdministrator,CarComputerHardwareEng,CarComputerSystemAnalyst,CarComputerNetworkArchitect, CarCyberSecuritySpeacialist;
+public class BecomeWebFrontEndDev extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cst_career);
-        CarSoftwareEngginer = findViewById(R.id.CarSoftwareEngginer);
-        CarFrontendDeveloper = findViewById(R.id.CarFrontendDeveloper);
-        CarFrontendDeveloper.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextPageAdapter(BecomeWebFrontEndDev.class);
-            }
-        });
-        CarSoftwareEngginer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextPageAdapter(BecomeSoftwareEng.class);
-            }
-        });
+        setContentView(R.layout.activity_become_web_front_end_dev);
+
+
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
-        getSupportActionBar().setTitle("Choose Career");
+        getSupportActionBar().setTitle("Software Engineer");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
-    }
-    public void nextPageAdapter(Class<?> toLocation){
-        Intent intentCar = new Intent(CstCareer.this,toLocation);
-        startActivity(intentCar);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

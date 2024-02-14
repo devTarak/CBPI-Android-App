@@ -16,13 +16,21 @@
         android:theme="@style/Theme.CBPI"
         tools:targetApi="31">
         <activity
+            android:name=".BecomeSoftwareEng"
+            android:exported="false"
+            android:parentActivityName=".CstCareer"/>
+        <activity
+            android:name=".BecomeWebFrontEndDev"
+            android:exported="false"
+            android:parentActivityName=".CstCareer"/>
+        <activity
             android:name=".ScheduleDisplayActivity"
             android:exported="false"
-            android:parentActivityName=".TeacherScheduleMain"/>
+            android:parentActivityName=".TeacherScheduleMain" />
         <activity
             android:name=".TeacherScheduleMain"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CstCareer"
             android:exported="false"
