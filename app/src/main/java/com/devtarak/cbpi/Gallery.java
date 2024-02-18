@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,7 +19,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -26,11 +30,23 @@ import java.util.Arrays;
 public class Gallery extends AppCompatActivity {
     private GridView gridView;
     private ArrayList<Integer> imageList;
+    ShimmerFrameLayout mainGalleryPlace;
+    LinearLayout mainGalleryField;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
+        mainGalleryPlace = findViewById(R.id.mainGalleryPlace);
+        mainGalleryField = findViewById(R.id.mainGalleryField);
+        mainGalleryField.setVisibility(View.INVISIBLE);
+        mainGalleryPlace.startShimmerAnimation();
+        Handler handler = new Handler();
+        handler.postDelayed(()->{
+            mainGalleryField.setVisibility(View.VISIBLE);
+            mainGalleryPlace.stopShimmerAnimation();
+            mainGalleryPlace.setVisibility(View.INVISIBLE);
+        },5000);
 
         gridView = findViewById(R.id.myGrid);
 

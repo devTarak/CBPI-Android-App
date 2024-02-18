@@ -4,14 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Gallery"
-    android:paddingTop="20sp"
-    android:paddingLeft="10sp">
-    <GridView
-        android:id="@+id/myGrid"
+    tools:context=".Gallery">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/mainGalleryPlace"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="3"
-        android:verticalSpacing="10dp"
-        android:horizontalSpacing="10dp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/gallery_pleaceholder"/>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <LinearLayout
+        android:id="@+id/mainGalleryField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10sp"
+        android:paddingTop="20sp">
+        <GridView
+            android:id="@+id/myGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp" />
+    </LinearLayout>
 </RelativeLayout>
