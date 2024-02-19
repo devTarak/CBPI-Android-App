@@ -16,14 +16,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class ComputerDepartment extends AppCompatActivity {
-    ImageView cmtMail1;
-    ImageView cmtMail2;
-    ImageView cmtMail3;
-    ImageView cmtMail4;
-    ImageView cmtCall1;
-    ImageView cmtCall2;
-    ImageView cmtCall3;
-    ImageView cmtCall4;
+    ImageView cmtMail1, cmtMail2, cmtMail3, cmtMail4,cmtCall1, cmtCall2, cmtCall3, cmtCall4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

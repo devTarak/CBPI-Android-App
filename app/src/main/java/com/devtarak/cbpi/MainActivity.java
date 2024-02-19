@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -25,18 +26,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
-    LinearLayout heroabout;
-    LinearLayout heroteacher;
-    LinearLayout herogallary;
-    LinearLayout herostaffs;
-    LinearLayout heronotice;
-    LinearLayout herosupport;
-    LinearLayout herojob;
-    LinearLayout herobteb;
-    LinearLayout heroTeam;
-    LinearLayout heroMap;
-    LinearLayout heroclassSh;
-    LinearLayout herocstcar;
+    LinearLayout heroabout, heroteacher, herogallary, herostaffs, heronotice, herosupport, herojob, herobteb, heroTeam, heroMap, heroclassSh, herocstcar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

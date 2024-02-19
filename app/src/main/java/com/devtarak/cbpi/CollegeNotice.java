@@ -31,9 +31,8 @@ public class CollegeNotice extends AppCompatActivity {
 
     // init variable here
     WebView webView;
-    LinearLayout layNonet;
+    LinearLayout layNonet, layRoot;
     ProgressBar progressBar;
-    LinearLayout layRoot;
     String USER_AGENT_ = "Mozilla/5.0 (Linux; Android 4.1.1; Galaxy Nexus Build/JRO03C) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19";
 
 

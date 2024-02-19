@@ -16,8 +16,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Principal extends AppCompatActivity {
-    ImageView princeMail;
-    ImageView princeCall;
+    ImageView princeMail, princeCall;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
