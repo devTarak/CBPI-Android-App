@@ -8,19 +8,44 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class RacDepartment extends AppCompatActivity {
-
+    ImageView racMail1, racMail2, racMail3, racMail4,racMail5,racMail6, racCall1, racCall2, racCall3, racCall4,racCall5,racCall6;
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rac_department);
-
+        racMail1 = findViewById(R.id.racMail1);
+        racMail2 = findViewById(R.id.racMail2);
+        racMail3 = findViewById(R.id.racMail3);
+        racMail4 = findViewById(R.id.racMail4);
+        racMail5 = findViewById(R.id.racMail5);
+        racMail6 = findViewById(R.id.racMail6);
+        racCall1 = findViewById(R.id.racCall1);
+        racCall2 = findViewById(R.id.racCall2);
+        racCall3 = findViewById(R.id.racCall3);
+        racCall4 = findViewById(R.id.racCall4);
+        racCall5 = findViewById(R.id.racCall5);
+        racCall6 = findViewById(R.id.racCall6);
+        racCall1.setOnClickListener(v -> ClickRedirectrac("tel:01748045850"));
+        racCall2.setOnClickListener(v -> ClickRedirectrac("tel:01845697348"));
+        racCall3.setOnClickListener(v -> ClickRedirectrac("tel:01823153326"));
+        racCall4.setOnClickListener(v -> ClickRedirectrac("tel:01814784600"));
+        racCall5.setOnClickListener(v -> ClickRedirectrac("tel:01820191707"));
+        racCall6.setOnClickListener(v -> ClickRedirectrac("tel:01723079651"));
+        racMail1.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail2.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail3.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail4.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail5.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail6.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -28,6 +53,12 @@ public class RacDepartment extends AppCompatActivity {
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("RAC Department");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.color.Green))));
+    }
+    public void ClickRedirectrac(String url){
+        Intent intenturl = new Intent(Intent.ACTION_VIEW);
+        intenturl.setData(Uri.parse(url));
+        startActivity(intenturl);
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
