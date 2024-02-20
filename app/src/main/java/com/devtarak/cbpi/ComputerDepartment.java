@@ -30,54 +30,14 @@ public class ComputerDepartment extends AppCompatActivity {
         cmtCall2 = findViewById(R.id.cmtCall2);
         cmtCall3 = findViewById(R.id.cmtCall3);
         cmtCall4 = findViewById(R.id.cmtCall4);
-        cmtCall1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("tel:+8801962823150");
-            }
-        });
-        cmtCall2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("tel:+8801719508316");
-            }
-        });
-        cmtCall3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("tel:+8801721153960");
-            }
-        });
-        cmtCall4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("tel:+8801868672498");
-            }
-        });
-        cmtMail1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("mailto:pravas.kanti.dey@gmail.com");
-            }
-        });
-        cmtMail2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("mailto:mrana130@gmail.com");
-            }
-        });
-        cmtMail3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("mailto:abc@gmail.com");
-            }
-        });
-        cmtMail4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectCst("mailto:sarif914101@gmail.com");
-            }
-        });
+        cmtCall1.setOnClickListener(v -> ClickRedirectCst("tel:+8801962823150"));
+        cmtCall2.setOnClickListener(v -> ClickRedirectCst("tel:+8801719508316"));
+        cmtCall3.setOnClickListener(v -> ClickRedirectCst("tel:+8801721153960"));
+        cmtCall4.setOnClickListener(v -> ClickRedirectCst("tel:+8801868672498"));
+        cmtMail1.setOnClickListener(v -> ClickRedirectCst("mailto:pravas.kanti.dey@gmail.com"));
+        cmtMail2.setOnClickListener(v -> ClickRedirectCst("mailto:mrana130@gmail.com"));
+        cmtMail3.setOnClickListener(v -> ClickRedirectCst("mailto:coxpoly2@gmail.com"));
+        cmtMail4.setOnClickListener(v -> ClickRedirectCst("mailto:sarif914101@gmail.com"));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
