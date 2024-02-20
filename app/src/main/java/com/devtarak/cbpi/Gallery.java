@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -16,17 +15,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.GridView;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Gallery extends AppCompatActivity {
     private GridView gridView;
@@ -57,14 +51,11 @@ public class Gallery extends AppCompatActivity {
         imageList.add(R.drawable.imggel2);
         imageList.add(R.drawable.imggel3);
         imageList.add(R.drawable.imggel4);
-        imageList.add(R.drawable.imggel5);
         imageList.add(R.drawable.imggel6);
-        imageList.add(R.drawable.imggel7);
-        imageList.add(R.drawable.imggel8);
         imageList.add(R.drawable.imggel9);
         imageList.add(R.drawable.imggel10);
         imageList.add(R.drawable.imggel11);
-        imageList.add(R.drawable.img1);
+        imageList.add(R.drawable.slider2);
 
         // Add more images as needed
 

@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<SlideModel> imageList = new ArrayList<>();
 
 
-        imageList.add(new SlideModel(R.drawable.img1, ScaleTypes.FIT));
-        imageList.add(new SlideModel(R.drawable.img2,ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.slider2, ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.slider1,ScaleTypes.FIT));
         imageList.add(new SlideModel(R.drawable.img3,ScaleTypes.FIT));
 
         imageSlider.setImageList(imageList);

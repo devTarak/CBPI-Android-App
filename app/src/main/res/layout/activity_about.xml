@@ -27,7 +27,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="300sp"
-                android:src="@drawable/img1"
+                android:src="@drawable/slider2"
                 android:paddingBottom="10sp"/>
             <TextView
                 android:layout_width="match_parent"
