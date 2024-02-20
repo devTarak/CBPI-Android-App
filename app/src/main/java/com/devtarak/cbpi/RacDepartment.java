@@ -40,12 +40,12 @@ public class RacDepartment extends AppCompatActivity {
         racCall4.setOnClickListener(v -> ClickRedirectrac("tel:01814784600"));
         racCall5.setOnClickListener(v -> ClickRedirectrac("tel:01820191707"));
         racCall6.setOnClickListener(v -> ClickRedirectrac("tel:01723079651"));
-        racMail1.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
-        racMail2.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail1.setOnClickListener(v -> ClickRedirectrac("mailto:gowtammridha10@gmail.com"));
+        racMail2.setOnClickListener(v -> ClickRedirectrac("mailto:easinhunt24@gmail.com"));
         racMail3.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
-        racMail4.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail4.setOnClickListener(v -> ClickRedirectrac("mailto:chowdhuryrokyduet@gmail.com"));
         racMail5.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
-        racMail6.setOnClickListener(v -> ClickRedirectrac(getString(R.string.defult_mail)));
+        racMail6.setOnClickListener(v -> ClickRedirectrac("mailto:abujahid945@gmail.com"));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
