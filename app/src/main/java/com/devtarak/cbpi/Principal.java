@@ -23,18 +23,8 @@ public class Principal extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
         princeMail = findViewById(R.id.princeMail);
         princeCall = findViewById(R.id.princeCall);
-        princeMail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectPrin("mailto:abc@gmail.com");
-            }
-        });
-        princeCall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ClickRedirectPrin("tel:+8801795925340");
-            }
-        });
+        princeMail.setOnClickListener(v -> ClickRedirectPrin(getString(R.string.defult_mail)));
+        princeCall.setOnClickListener(v -> ClickRedirectPrin("tel:+8801795925340"));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
