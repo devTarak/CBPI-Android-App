@@ -1,8 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.CBPI" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.CBPI" parent="Theme.Material3.DayNight">
+        <item name="android:statusBarColor">@color/Green</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="actionOverflowButtonStyle">@style/Threedots</item>
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <!--     Assign the animation style     -->
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+    <style name="fullViewTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+    <style name="Threedots" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="tint">@color/white</item>
+    </style>
+    <style name="Theme.CBPI" parent="Base.Theme.CBPI" />
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 </resources>

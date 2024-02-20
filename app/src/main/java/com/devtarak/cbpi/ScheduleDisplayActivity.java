@@ -66,7 +66,7 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         List<Map<String, String[]>> tarakSchedule = new ArrayList<>();
         tarakSchedule.add(Map.of("sunday", new String[]{"English-2nd-1st-12:45pm to 1:30pm-302", "Math-2nd-2nd-1:30pm to 2:15pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "Milestone-2nd-1st-12:45pm to 1:30pm-302"}));
         tarakSchedule.add(Map.of("monday", new String[]{"Bangla-2nd-1st-12:45pm to 1:30pm-302", "Chemistry-2nd-1st-12:45pm to 1:30pm-302", "Math-2nd-1st-12:45pm to 1:30pm-302", "ICT-2nd-1st-12:45pm to 1:30pm-302"}));
-        tarakSchedule.add(Map.of("thursday", new String[]{"English-2nd-1st-12:45pm to 1:30pm-302", "H.Math-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "Business-2nd-1st-12:45pm to 1:30pm-302"}));
+        tarakSchedule.add(Map.of("tuesday", new String[]{"English-2nd-1st-12:45pm to 1:30pm-302", "H.Math-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "Business-2nd-1st-12:45pm to 1:30pm-302"}));
         tarakSchedule.add(Map.of("wednesday", new String[]{"Math-2nd-1st-12:45pm to 1:30pm-302", "Fun-2nd-1st-12:45pm to 1:30pm-302", "Lab Class-2nd-1st-12:45pm to 1:30pm-302", "BSK-2nd-1st-12:45pm to 1:30pm-302"}));
         tarakSchedule.add(Map.of("thursday", new String[]{"Python-2nd-1st-12:45pm to 1:30pm-302", "OS-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "DSH-2nd-1st-12:45pm to 1:30pm-302"}));
         tarak.put("schedule", tarakSchedule);
@@ -78,7 +78,7 @@ public class ScheduleDisplayActivity extends AppCompatActivity {
         List<Map<String, String[]>> rahimSchedule = new ArrayList<>();
         rahimSchedule.add(Map.of("sunday", new String[]{"English-2nd-1st-12:45pm to 1:30pm-302", "Math-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "Milestone-2nd-1st-12:45pm to 1:30pm-302"}));
         rahimSchedule.add(Map.of("monday", new String[]{"Bangla-2nd-1st-12:45pm to 1:30pm-302", "Chemistry-2nd-1st-12:45pm to 1:30pm-302", "Math-2nd-1st-12:45pm to 1:30pm-302", "ICT-2nd-1st-12:45pm to 1:30pm-302"}));
-        rahimSchedule.add(Map.of("thursday", new String[]{"English-2nd-1st-12:45pm to 1:30pm-302", "H.Math-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "Business-2nd-1st-12:45pm to 1:30pm-302"}));
+        rahimSchedule.add(Map.of("tuesday", new String[]{"English-2nd-1st-12:45pm to 1:30pm-302", "H.Math-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "Business-2nd-1st-12:45pm to 1:30pm-302"}));
         rahimSchedule.add(Map.of("wednesday", new String[]{"Math-2nd-1st-12:45pm to 1:30pm-302", "Fun-2nd-1st-12:45pm to 1:30pm-302", "Lab Class-2nd-1st-12:45pm to 1:30pm-302", "BSK-2nd-1st-12:45pm to 1:30pm-302"}));
         rahimSchedule.add(Map.of("thursday", new String[]{"Python-2nd-1st-12:45pm to 1:30pm-302", "OS-2nd-1st-12:45pm to 1:30pm-302", "Physics-2nd-1st-12:45pm to 1:30pm-302", "DSH-2nd-1st-12:45pm to 1:30pm-302"}));
         rahim.put("schedule", rahimSchedule);
