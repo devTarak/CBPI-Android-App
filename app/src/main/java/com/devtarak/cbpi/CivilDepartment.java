@@ -36,11 +36,11 @@ public class CivilDepartment extends AppCompatActivity {
         civilCall3.setOnClickListener(v -> ClickRedirectCivil("tel:01717025920"));
         civilCall4.setOnClickListener(v -> ClickRedirectCivil("tel:01673132628"));
         civilCall5.setOnClickListener(v -> ClickRedirectCivil("tel:01911272347"));
-        civilMail1.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
-        civilMail2.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
-        civilMail3.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
-        civilMail4.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
-        civilMail5.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
+        civilMail1.setOnClickListener(v -> ClickRedirectCivil(getString(R.string.defult_mail)));
+        civilMail2.setOnClickListener(v -> ClickRedirectCivil(getString(R.string.defult_mail)));
+        civilMail3.setOnClickListener(v -> ClickRedirectCivil(getString(R.string.defult_mail)));
+        civilMail4.setOnClickListener(v -> ClickRedirectCivil(getString(R.string.defult_mail)));
+        civilMail5.setOnClickListener(v -> ClickRedirectCivil(getString(R.string.defult_mail)));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

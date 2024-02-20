@@ -5,4 +5,6 @@
     <string name="Bteb_notice">https://bteb.gov.bd/site/view/notices</string>
     <string name="College_Notice">https://coxsbazar.polytech.gov.bd/site/view/notices</string>
     <string name="img_des">CBPI Application Image</string>
+    <string name="defult_mail">mailto:coxpoly2@gmail.com</string>
+
 </resources>
