@@ -7,18 +7,40 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 public class CivilDepartment extends AppCompatActivity {
-
+    ImageView civilMail1, civilMail2, civilMail3, civilMail4,civilMail5, civilCall1, civilCall2, civilCall3, civilCall4,civilCall5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_civil_department);
-
+        civilMail1 = findViewById(R.id.civilMail1);
+        civilMail2 = findViewById(R.id.civilMail2);
+        civilMail3 = findViewById(R.id.civilMail3);
+        civilMail4 = findViewById(R.id.civilMail4);
+        civilMail5 = findViewById(R.id.civilMail5);
+        civilCall1 = findViewById(R.id.civilCall1);
+        civilCall2 = findViewById(R.id.civilCall2);
+        civilCall3 = findViewById(R.id.civilCall3);
+        civilCall4 = findViewById(R.id.civilCall4);
+        civilCall5 = findViewById(R.id.civilCall5);
+        civilCall1.setOnClickListener(v -> ClickRedirectCivil("tel:01815182666"));
+        civilCall2.setOnClickListener(v -> ClickRedirectCivil("tel:01717545728"));
+        civilCall3.setOnClickListener(v -> ClickRedirectCivil("tel:01717025920"));
+        civilCall4.setOnClickListener(v -> ClickRedirectCivil("tel:01673132628"));
+        civilCall5.setOnClickListener(v -> ClickRedirectCivil("tel:01911272347"));
+        civilMail1.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
+        civilMail2.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
+        civilMail3.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
+        civilMail4.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
+        civilMail5.setOnClickListener(v -> ClickRedirectCivil("mailto:coxpoly2@gmail.com"));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -26,6 +48,12 @@ public class CivilDepartment extends AppCompatActivity {
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("Civil Department");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
+    }
+    public void ClickRedirectCivil(String url){
+        Intent intenturl = new Intent(Intent.ACTION_VIEW);
+        intenturl.setData(Uri.parse(url));
+        startActivity(intenturl);
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
