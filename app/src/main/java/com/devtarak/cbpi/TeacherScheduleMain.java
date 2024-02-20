@@ -1,5 +1,6 @@
 package com.devtarak.cbpi;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -28,6 +29,7 @@ public class TeacherScheduleMain extends AppCompatActivity {
     private List<String> allTeachers;
     private ArrayAdapter<String> adapter;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +71,7 @@ public class TeacherScheduleMain extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("Teacher's Class Finder");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.color.Green))));
     }
 
     private void showSchedule(String teacherName) {

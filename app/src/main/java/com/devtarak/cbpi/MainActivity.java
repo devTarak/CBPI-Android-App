@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -25,6 +26,7 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
     LinearLayout heroabout, heroteacher, herogallary, herostaffs, heronotice, herosupport, herojob, herobteb, heroTeam, heroMap, heroclassSh, herocstcar;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         });
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         Objects.requireNonNull(getSupportActionBar()).setTitle("Home");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.color.Green))));
 
         ImageSlider imageSlider;
 

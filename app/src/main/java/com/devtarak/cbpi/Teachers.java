@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -17,6 +18,7 @@ import android.widget.LinearLayout;
 public class Teachers extends AppCompatActivity {
     LinearLayout nontech, electrical, food,  rac, civil, computer, principle;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,54 +30,33 @@ public class Teachers extends AppCompatActivity {
         food = findViewById(R.id.food);
         electrical = findViewById(R.id.electrical);
         nontech = findViewById(R.id.nontech);
-        nontech.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthelNon = new Intent(Teachers.this,NontechDepartment.class);
-                startActivity(myIntenthelNon);
-            }
+        nontech.setOnClickListener(v -> {
+            Intent myIntenthelNon = new Intent(Teachers.this,NontechDepartment.class);
+            startActivity(myIntenthelNon);
         });
-        electrical.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthelEle = new Intent(Teachers.this,ElectricalDepartment.class);
-                startActivity(myIntenthelEle);
-            }
+        electrical.setOnClickListener(v -> {
+            Intent myIntenthelEle = new Intent(Teachers.this,ElectricalDepartment.class);
+            startActivity(myIntenthelEle);
         });
-        food.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthelfood = new Intent(Teachers.this,FoodDepartment.class);
-                startActivity(myIntenthelfood);
-            }
+        food.setOnClickListener(v -> {
+            Intent myIntenthelfood = new Intent(Teachers.this,FoodDepartment.class);
+            startActivity(myIntenthelfood);
         });
-        rac.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthelRac = new Intent(Teachers.this,RacDepartment.class);
-                startActivity(myIntenthelRac);
-            }
+        rac.setOnClickListener(v -> {
+            Intent myIntenthelRac = new Intent(Teachers.this,RacDepartment.class);
+            startActivity(myIntenthelRac);
         });
-        civil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthelCiv = new Intent(Teachers.this,CivilDepartment.class);
-                startActivity(myIntenthelCiv);
-            }
+        civil.setOnClickListener(v -> {
+            Intent myIntenthelCiv = new Intent(Teachers.this,CivilDepartment.class);
+            startActivity(myIntenthelCiv);
         });
-        computer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthelCom = new Intent(Teachers.this,ComputerDepartment.class);
-                startActivity(myIntenthelCom);
-            }
+        computer.setOnClickListener(v -> {
+            Intent myIntenthelCom = new Intent(Teachers.this,ComputerDepartment.class);
+            startActivity(myIntenthelCom);
         });
-        principle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntenthelPrin = new Intent(Teachers.this,Principal.class);
-                startActivity(myIntenthelPrin);
-            }
+        principle.setOnClickListener(v -> {
+            Intent myIntenthelPrin = new Intent(Teachers.this,Principal.class);
+            startActivity(myIntenthelPrin);
         });
 
         //mendotory for every page
@@ -83,7 +64,7 @@ public class Teachers extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("Teacher's Details");
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#609513")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.color.Green))));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
