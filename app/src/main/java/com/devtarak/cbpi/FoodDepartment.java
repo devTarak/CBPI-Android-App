@@ -8,19 +8,44 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class FoodDepartment extends AppCompatActivity {
-
+    ImageView foodMail1, foodMail2, foodMail3, foodMail4,foodMail5,foodMail6, foodCall1, foodCall2, foodCall3, foodCall4,foodCall5,foodCall6;
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_department);
-
+        foodMail1 = findViewById(R.id.foodMail1);
+        foodMail2 = findViewById(R.id.foodMail2);
+        foodMail3 = findViewById(R.id.foodMail3);
+        foodMail4 = findViewById(R.id.foodMail4);
+        foodMail5 = findViewById(R.id.foodMail5);
+        foodMail6 = findViewById(R.id.foodMail6);
+        foodCall1 = findViewById(R.id.foodCall1);
+        foodCall2 = findViewById(R.id.foodCall2);
+        foodCall3 = findViewById(R.id.foodCall3);
+        foodCall4 = findViewById(R.id.foodCall4);
+        foodCall5 = findViewById(R.id.foodCall5);
+        foodCall6 = findViewById(R.id.foodCall6);
+        foodCall1.setOnClickListener(v -> ClickRedirectfood("tel:01737918900"));
+        foodCall2.setOnClickListener(v -> ClickRedirectfood("tel:01934210356"));
+        foodCall3.setOnClickListener(v -> ClickRedirectfood("tel:01925244234"));
+        foodCall4.setOnClickListener(v -> ClickRedirectfood("tel:01723789744"));
+        foodCall5.setOnClickListener(v -> ClickRedirectfood("tel:01840013761"));
+        foodCall6.setOnClickListener(v -> ClickRedirectfood("tel:01828700803"));
+        foodMail1.setOnClickListener(v -> ClickRedirectfood("mailto:selimreza.just@gmail.com"));
+        foodMail2.setOnClickListener(v -> ClickRedirectfood(getString(R.string.defult_mail)));
+        foodMail3.setOnClickListener(v -> ClickRedirectfood(getString(R.string.defult_mail)));
+        foodMail4.setOnClickListener(v -> ClickRedirectfood("mailto:sarower.008@gmail.com"));
+        foodMail5.setOnClickListener(v -> ClickRedirectfood(getString(R.string.defult_mail)));
+        foodMail6.setOnClickListener(v -> ClickRedirectfood("mailto:nasaruddinft@gmail.com"));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -28,6 +53,12 @@ public class FoodDepartment extends AppCompatActivity {
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("Food Department");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.color.Green))));
+    }
+    public void ClickRedirectfood(String url){
+        Intent intenturl = new Intent(Intent.ACTION_VIEW);
+        intenturl.setData(Uri.parse(url));
+        startActivity(intenturl);
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

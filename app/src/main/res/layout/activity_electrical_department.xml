@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ElectricalDepartment">
+    tools:context=".ElectricalDepartment"
+    android:background="#EAEAEA">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5sp"
+            android:weightSum="100"
+            android:background="@drawable/teachercardback"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp">
+            <ImageView
+                android:layout_width="80sp"
+                android:layout_height="120sp"
+                android:src="@drawable/mohiuddinsir"
+                android:layout_weight="20"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="220sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="50"
+                android:layout_gravity="center"
+                android:paddingLeft="15sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="মুহাম্মদ মহিউদ্দিন"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ইনস্ট্রাক্টর (টেক) ইলেকট্রিক্যাল ও বিভাগীয় প্রধান, ইলেকট্রিক্যাল টেকনোলোজি"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="30"
+                android:layout_gravity="center"
+                android:paddingRight="10sp">
+                <ImageView
+                    android:id="@+id/elecMail1"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/baseline_email_24"
+                    android:layout_margin="10sp"/>
+                <ImageView
+                    android:id="@+id/elecCall1"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/baseline_call_24"
+                    android:layout_margin="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

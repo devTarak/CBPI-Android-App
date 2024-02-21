@@ -8,19 +8,25 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class ElectricalDepartment extends AppCompatActivity {
+    ImageView elecMail1,elecCall1;
 
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_electrical_department);
-
+        elecMail1 = findViewById(R.id.elecMail1);
+        elecCall1 = findViewById(R.id.elecCall1);
+        elecCall1.setOnClickListener(v -> ClickRedirectelec("tel:01814766252"));
+        elecMail1.setOnClickListener(v -> ClickRedirectelec("mailto:mohiuddincpiet@gmail.com"));
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -28,6 +34,12 @@ public class ElectricalDepartment extends AppCompatActivity {
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("Electrical Department");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.color.Green))));
+    }
+    public void ClickRedirectelec(String url){
+        Intent intenturl = new Intent(Intent.ACTION_VIEW);
+        intenturl.setData(Uri.parse(url));
+        startActivity(intenturl);
+
     }
 
     @Override
