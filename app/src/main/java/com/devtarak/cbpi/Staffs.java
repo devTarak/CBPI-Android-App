@@ -127,8 +127,6 @@ public class Staffs extends AppCompatActivity {
         staffCall33.setOnClickListener(v -> ClickRedirectstaff("tel:01614855325"));
         staffCall34.setOnClickListener(v -> ClickRedirectstaff("tel:01531489700"));
         staffCall35.setOnClickListener(v -> ClickRedirectstaff("tel:01861628872"));
-
-
         staffMail1.setOnClickListener(v -> ClickRedirectstaff("mailto:saifulislamcoxpoly@gmail.com"));
         staffMail2.setOnClickListener(v -> ClickRedirectstaff("mailto:mosharaf.8299@gmail.com"));
         staffMail3.setOnClickListener(v -> ClickRedirectstaff("mailto:proloyfst50@gmail.com"));
