@@ -17,28 +17,35 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Team extends AppCompatActivity {
-    ImageView creatorNum;
+    ImageView creatorNum,creatorGit,creatorFB;
     @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team);
         creatorNum=findViewById(R.id.creatorNum);
-        creatorNum.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentCall = new Intent(Intent.ACTION_DIAL);
-                intentCall.setData(Uri.parse("tel:+8801304404489"));
-                startActivity(intentCall);
-            }
+        creatorGit = findViewById(R.id.creatorGit);
+        creatorFB = findViewById(R.id.creatorFB);
+        creatorFB.setOnClickListener(v -> ClickRedirectTeam("https://www.facebook.com/TarakRahman.developer"));
+        creatorGit.setOnClickListener(v -> ClickRedirectTeam("https://github.com/devTarak"));
+        creatorNum.setOnClickListener(v -> {
+            Intent intentCall = new Intent(Intent.ACTION_DIAL);
+            intentCall.setData(Uri.parse("tel:+8801304404489"));
+            startActivity(intentCall);
         });
 
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
-        getSupportActionBar().setTitle("Team");
+        getSupportActionBar().setTitle("Developer");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(getString(R.color.Green))));
+    }
+    public void ClickRedirectTeam(String url){
+        Intent intenturl = new Intent(Intent.ACTION_VIEW);
+        intenturl.setData(Uri.parse(url));
+        startActivity(intenturl);
+
     }
 
     @Override
