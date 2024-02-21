@@ -53,13 +53,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail1"
+                    android:id="@+id/staffMail1"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall1"
+                    android:id="@+id/staffCall1"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -109,13 +109,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail2"
+                    android:id="@+id/staffMail2"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall2"
+                    android:id="@+id/staffCall2"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -164,13 +164,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail3"
+                    android:id="@+id/staffMail3"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall3"
+                    android:id="@+id/staffCall3"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -219,13 +219,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail4"
+                    android:id="@+id/staffMail4"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall4"
+                    android:id="@+id/staffCall4"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -274,13 +274,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail5"
+                    android:id="@+id/staffMail5"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall5"
+                    android:id="@+id/staffCall5"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -329,13 +329,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail6"
+                    android:id="@+id/staffMail6"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall6"
+                    android:id="@+id/staffCall6"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -384,13 +384,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail7"
+                    android:id="@+id/staffMail7"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall7"
+                    android:id="@+id/staffCall7"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -428,7 +428,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Craft Instructor (Shop)RAC"
+                    android:text="Craft Instructor (Shop)staff"
                     android:textSize="10sp"/>
             </LinearLayout>
             <LinearLayout
@@ -439,13 +439,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail8"
+                    android:id="@+id/staffMail8"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall8"
+                    android:id="@+id/staffCall8"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -483,7 +483,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Craft Instructor (Shop)RAC"
+                    android:text="Craft Instructor (Shop)staff"
                     android:textSize="10sp"/>
             </LinearLayout>
             <LinearLayout
@@ -494,13 +494,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail9"
+                    android:id="@+id/staffMail9"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall9"
+                    android:id="@+id/staffCall9"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -549,13 +549,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail10"
+                    android:id="@+id/staffMail10"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall10"
+                    android:id="@+id/staffCall10"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -604,13 +604,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail11"
+                    android:id="@+id/staffMail11"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall11"
+                    android:id="@+id/staffCall11"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -659,13 +659,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail12"
+                    android:id="@+id/staffMail12"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall12"
+                    android:id="@+id/staffCall12"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -714,13 +714,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail13"
+                    android:id="@+id/staffMail13"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall13"
+                    android:id="@+id/staffCall13"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -769,13 +769,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail14"
+                    android:id="@+id/staffMail14"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall14"
+                    android:id="@+id/staffCall14"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -824,13 +824,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail15"
+                    android:id="@+id/staffMail15"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall15"
+                    android:id="@+id/staffCall15"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -879,13 +879,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail16"
+                    android:id="@+id/staffMail16"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall16"
+                    android:id="@+id/staffCall16"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -934,13 +934,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail17"
+                    android:id="@+id/staffMail17"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall17"
+                    android:id="@+id/staffCall17"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -978,7 +978,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Craft Instructor (TR/Electronics/Tech) RAC"
+                    android:text="Craft Instructor (TR/Electronics/Tech) staff"
                     android:textSize="10sp"/>
             </LinearLayout>
             <LinearLayout
@@ -989,13 +989,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail18"
+                    android:id="@+id/staffMail18"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall18"
+                    android:id="@+id/staffCall18"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1033,7 +1033,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Craft Instructor (TR/Electronics/Tech) RAC"
+                    android:text="Craft Instructor (TR/Electronics/Tech) staff"
                     android:textSize="10sp"/>
             </LinearLayout>
             <LinearLayout
@@ -1044,13 +1044,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail19"
+                    android:id="@+id/staffMail19"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall19"
+                    android:id="@+id/staffCall19"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1088,7 +1088,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Craft Instructor (TR/Electronics/Tech) RAC"
+                    android:text="Craft Instructor (TR/Electronics/Tech) staff"
                     android:textSize="10sp"/>
             </LinearLayout>
             <LinearLayout
@@ -1099,13 +1099,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail20"
+                    android:id="@+id/staffMail20"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall20"
+                    android:id="@+id/staffCall20"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1143,7 +1143,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Craft Instructor (TR/Electronics/Tech) RAC"
+                    android:text="Craft Instructor (TR/Electronics/Tech) staff"
                     android:textSize="10sp"/>
             </LinearLayout>
             <LinearLayout
@@ -1154,13 +1154,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail21"
+                    android:id="@+id/staffMail21"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall21"
+                    android:id="@+id/staffCall21"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1209,13 +1209,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail22"
+                    android:id="@+id/staffMail22"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall22"
+                    android:id="@+id/staffCall22"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1264,13 +1264,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail23"
+                    android:id="@+id/staffMail23"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall23"
+                    android:id="@+id/staffCall23"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1319,13 +1319,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail24"
+                    android:id="@+id/staffMail24"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall24"
+                    android:id="@+id/staffCall24"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1374,13 +1374,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail25"
+                    android:id="@+id/staffMail25"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall25"
+                    android:id="@+id/staffCall25"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1429,13 +1429,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail26"
+                    android:id="@+id/staffMail26"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall26"
+                    android:id="@+id/staffCall26"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1484,13 +1484,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail27"
+                    android:id="@+id/staffMail27"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall27"
+                    android:id="@+id/staffCall27"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1539,13 +1539,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail28"
+                    android:id="@+id/staffMail28"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall28"
+                    android:id="@+id/staffCall28"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1594,13 +1594,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail29"
+                    android:id="@+id/staffMail29"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall29"
+                    android:id="@+id/staffCall29"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1649,13 +1649,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail30"
+                    android:id="@+id/staffMail30"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall30"
+                    android:id="@+id/staffCall30"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1704,13 +1704,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail31"
+                    android:id="@+id/staffMail31"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall31"
+                    android:id="@+id/staffCall31"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1759,13 +1759,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail32"
+                    android:id="@+id/staffMail32"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall32"
+                    android:id="@+id/staffCall32"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1814,13 +1814,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail33"
+                    android:id="@+id/staffMail33"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall33"
+                    android:id="@+id/staffCall33"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1869,13 +1869,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail34"
+                    android:id="@+id/staffMail34"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall34"
+                    android:id="@+id/staffCall34"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
@@ -1924,13 +1924,13 @@
                 android:layout_gravity="center"
                 android:paddingRight="10sp">
                 <ImageView
-                    android:id="@+id/racMail35"
+                    android:id="@+id/staffMail35"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_email_24"
                     android:layout_margin="10sp"/>
                 <ImageView
-                    android:id="@+id/racCall35"
+                    android:id="@+id/staffCall35"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:src="@drawable/baseline_call_24"
