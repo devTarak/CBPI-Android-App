@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 
     <application
         android:allowBackup="true"
@@ -17,13 +17,16 @@
         android:theme="@style/Theme.CBPI"
         tools:targetApi="31">
         <activity
+            android:name=".BecomeSoftwareDev"
+            android:exported="false" />
+        <activity
             android:name=".BecomeSoftwareEng"
             android:exported="false"
-            android:parentActivityName=".CstCareer"/>
+            android:parentActivityName=".CstCareer" />
         <activity
             android:name=".BecomeWebFrontEndDev"
             android:exported="false"
-            android:parentActivityName=".CstCareer"/>
+            android:parentActivityName=".CstCareer" />
         <activity
             android:name=".ScheduleDisplayActivity"
             android:exported="false"

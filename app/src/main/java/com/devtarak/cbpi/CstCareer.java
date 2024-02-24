@@ -23,19 +23,11 @@ public class CstCareer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cst_career);
         CarSoftwareEngginer = findViewById(R.id.CarSoftwareEngginer);
+        CarSoftwareDeveloper = findViewById(R.id.CarSoftwareDeveloper);
         CarFrontendDeveloper = findViewById(R.id.CarFrontendDeveloper);
-        CarFrontendDeveloper.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextPageAdapter(BecomeWebFrontEndDev.class);
-            }
-        });
-        CarSoftwareEngginer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                nextPageAdapter(BecomeSoftwareEng.class);
-            }
-        });
+        CarFrontendDeveloper.setOnClickListener(v -> nextPageAdapter(BecomeWebFrontEndDev.class));
+        CarSoftwareDeveloper.setOnClickListener(V -> nextPageAdapter(BecomeSoftwareDev.class));
+        CarSoftwareEngginer.setOnClickListener(v -> nextPageAdapter(BecomeSoftwareEng.class));
         //mendotory for every page
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);

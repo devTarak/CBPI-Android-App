@@ -3,7 +3,7 @@
     <item android:id="@+id/menItem1"
         android:title="Share"/>
     <item android:id="@+id/menItem2"
-        android:title="Team"/>
+        android:title="Developer Info"/>
     <item android:id="@+id/menuItem3"
         android:title="Version"/>
 </menu>
