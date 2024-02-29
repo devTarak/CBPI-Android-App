@@ -23,7 +23,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@drawable/teachersbg"
+                    style="@style/TeacherBg"
                     android:padding="15sp"
                     android:layout_margin="10sp"
                     android:layout_gravity="center"
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@drawable/teachersbg"
+                    style="@style/TeacherBg"
                     android:layout_weight="50"
                     android:padding="15sp"
                     android:layout_margin="10sp">
@@ -78,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@drawable/teachersbg"
+                    style="@style/TeacherBg"
                     android:layout_weight="50"
                     android:padding="15sp"
                     android:layout_margin="10sp">
@@ -109,7 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@drawable/teachersbg"
+                    style="@style/TeacherBg"
                     android:layout_weight="50"
                     android:padding="15sp"
                     android:layout_margin="10sp">
@@ -132,7 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@drawable/teachersbg"
+                    style="@style/TeacherBg"
                     android:layout_weight="50"
                     android:padding="15sp"
                     android:layout_margin="10sp">
@@ -163,7 +163,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@drawable/teachersbg"
+                    style="@style/TeacherBg"
                     android:layout_weight="50"
                     android:padding="15sp"
                     android:layout_margin="10sp">
@@ -186,7 +186,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="@drawable/teachersbg"
+                    style="@style/TeacherBg"
                     android:layout_weight="50"
                     android:padding="15sp"
                     android:layout_margin="10sp">

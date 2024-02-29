@@ -19,6 +19,29 @@
     <style name="Threedots" parent="Widget.AppCompat.ActionButton.Overflow">
         <item name="tint">@color/white</item>
     </style>
+    <!--Controle Day Text Color-->
+        <style name="Text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="TextLight">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TextGray">
+        <item name="android:textColor">@color/Gray</item>
+    </style>
+    <style name="GrayBg">
+        <item name="android:background">#EAEAEA</item>
+    </style>
+    <style name="TeacherCardBack">
+        <item name="android:background">@drawable/teachercardback</item>
+    </style>
+    <style name="TeacherBg">
+        <item name="android:background">@drawable/teachersbg</item>
+    </style>
+    <style name="BorderT">
+        <item name="android:background">@drawable/border</item>
+    </style>
+    <!--end Text Color-->
     <style name="Theme.CBPI" parent="Base.Theme.CBPI" />
     <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
         <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>

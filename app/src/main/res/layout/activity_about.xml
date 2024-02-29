@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:text="Brief Introduction of the Institute"
                 android:textSize="35sp"
-                android:textColor="@color/black"
+                style="@style/Text"
                 android:fontFamily="monospace"
                 android:paddingBottom="10sp"
                 android:paddingRight="10sp"
@@ -45,7 +45,7 @@ The present government of Bangladesh has given special importance to polytechnic
                 android:layout_height="wrap_content"
                 android:text="Infrastructure information"
                 android:textSize="25sp"
-                android:textColor="@color/black"
+                style="@style/Text"
                 android:fontFamily="monospace"
                 android:padding="10sp"/>
             <TextView
@@ -60,7 +60,7 @@ The present government of Bangladesh has given special importance to polytechnic
                 android:layout_height="wrap_content"
                 android:text="Success and achievement"
                 android:textSize="25sp"
-                android:textColor="@color/black"
+                style="@style/Text"
                 android:fontFamily="monospace"
                 android:padding="10sp"/>
             <LinearLayout

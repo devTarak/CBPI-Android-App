@@ -3,7 +3,6 @@ package com.devtarak.cbpi;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,6 +11,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import java.util.Objects;
 
 public class version extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class version extends AppCompatActivity {
         setContentView(R.layout.activity_version);
 
         //mendotory for every page
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.baseline_arrow_back_ios_24);
         getWindow().setNavigationBarColor(ContextCompat.getColor(this,R.color.Green));
         getSupportActionBar().setTitle("Version");

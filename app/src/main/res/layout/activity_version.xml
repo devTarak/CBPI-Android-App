@@ -7,7 +7,8 @@
     tools:context=".version"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:gravity="center">
+    android:gravity="center"
+    style="@style/GrayBg">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200sp"
@@ -18,7 +19,7 @@
         android:text="Cox's Bazar Polytechnic Institute(CBPI) Official application"
         android:textSize="20sp"
         android:gravity="center"
-        android:textColor="@color/black"/>
+        style="@style/Text"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

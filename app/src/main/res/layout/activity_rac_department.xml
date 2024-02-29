@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".RacDepartment"
-    android:background="#EAEAEA">
+    style="@style/GrayBg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
             android:orientation="horizontal"
             android:padding="5sp"
             android:weightSum="100"
-            android:background="@drawable/teachercardback"
+            style="@style/TeacherCardBack"
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp">
             <ImageView
@@ -39,7 +39,8 @@
                     android:text="গৌতম মৃধা
 "
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+style="@style/Text"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,7 +74,7 @@
             android:orientation="horizontal"
             android:padding="5sp"
             android:weightSum="100"
-            android:background="@drawable/teachercardback"
+            style="@style/TeacherCardBack"
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp">
             <ImageView
@@ -94,7 +95,8 @@
                     android:layout_height="wrap_content"
                     android:text="মোঃ ইয়াসিনুর রহমান"
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+style="@style/Text"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -129,7 +131,7 @@
             android:orientation="horizontal"
             android:padding="5sp"
             android:weightSum="100"
-            android:background="@drawable/teachercardback"
+            style="@style/TeacherCardBack"
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp">
             <ImageView
@@ -150,7 +152,8 @@
                     android:layout_height="wrap_content"
                     android:text="আতিকুর রহমান"
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+style="@style/Text"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -184,7 +187,7 @@
             android:orientation="horizontal"
             android:padding="5sp"
             android:weightSum="100"
-            android:background="@drawable/teachercardback"
+            style="@style/TeacherCardBack"
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp">
             <ImageView
@@ -205,7 +208,8 @@
                     android:layout_height="wrap_content"
                     android:text="রকি চৌধুরী"
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+style="@style/Text"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -239,7 +243,7 @@
             android:orientation="horizontal"
             android:padding="5sp"
             android:weightSum="100"
-            android:background="@drawable/teachercardback"
+            style="@style/TeacherCardBack"
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp">
             <ImageView
@@ -260,7 +264,8 @@
                     android:layout_height="wrap_content"
                     android:text="কাজী মোঃ ফখরুল আজম"
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+style="@style/Text"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -294,7 +299,7 @@
             android:orientation="horizontal"
             android:padding="5sp"
             android:weightSum="100"
-            android:background="@drawable/teachercardback"
+            style="@style/TeacherCardBack"
             android:layout_marginTop="10sp"
             android:layout_marginBottom="10sp">
             <ImageView
@@ -315,7 +320,8 @@
                     android:layout_height="wrap_content"
                     android:text="মোঃ আবু জাহিদ"
                     android:textStyle="bold"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp"
+style="@style/Text"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

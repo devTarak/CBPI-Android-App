@@ -25,7 +25,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -38,7 +38,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -51,7 +51,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -64,7 +64,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -77,7 +77,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -90,7 +90,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -103,7 +103,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -116,7 +116,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -129,7 +129,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -142,7 +142,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -155,7 +155,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -168,7 +168,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -181,7 +181,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>
@@ -194,7 +194,7 @@
                 android:background="@drawable/careerbg"
                 android:padding="10sp"
                 android:layout_marginBottom="10sp"
-                android:textColor="@color/white"
+                style="@style/TextLight"
                 android:textStyle="bold"
                 android:fontFamily="casual"
                 android:textSize="18sp"/>

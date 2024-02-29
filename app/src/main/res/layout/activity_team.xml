@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".Team"
     android:orientation="vertical"
-    android:background="#EAEAEA">
+    style="@style/GrayBg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:weightSum="100"
         android:padding="25sp"
-        android:background="@drawable/border"
+        style="@style/BorderT"
         android:gravity="center"
         android:layout_margin="30sp">
         <de.hdodenhof.circleimageview.CircleImageView
@@ -22,15 +22,15 @@
             android:layout_height="200dp"
             android:src="@drawable/creator"
             app:civ_border_width="5dp"
-            app:civ_border_color="#609513"
-            android:layout_weight="20"/>
+            app:civ_border_color="#609513"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TARAK RAHMAN"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:layout_marginBottom="10sp"/>
+            android:layout_marginBottom="10sp"
+            style="@style/Text"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
